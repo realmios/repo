@@ -1,0 +1,92 @@
+{
+ "minVersion": "0.4",
+ "class": "DepictionTabView",
+ "tintColor": "#b5301c",
+ "tabs": [
+  {
+   "tabname": "Chi tiết",
+   "class": "DepictionStackView",
+   "views": [
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Game đối kháng kiểu võ thuật: chụp hoặc chọn ảnh khuôn mặt, ghép lên đối thủ rồi đánh nhau ngay trên màn hình. Bản phục dựng chạy trên iOS đời mới."
+    },
+    {
+     "class": "DepictionScreenshotsView",
+     "itemCornerRadius": 12,
+     "itemSize": "{330, 220}",
+     "screenshots": [
+      {
+       "accessibilityText": "Màn hình 1",
+       "url": "https://realmios.github.io/repo/screenshots/ff1.jpg"
+      },
+      {
+       "accessibilityText": "Màn hình 2",
+       "url": "https://realmios.github.io/repo/screenshots/ff2.jpg"
+      },
+      {
+       "accessibilityText": "Màn hình 3",
+       "url": "https://realmios.github.io/repo/screenshots/ff3.jpg"
+      },
+      {
+       "accessibilityText": "Màn hình 4",
+       "url": "https://realmios.github.io/repo/screenshots/ff4.jpg"
+      }
+     ]
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionHeaderView",
+     "title": "Tính năng"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "• Chọn đối thủ có sẵn, 4 mức độ: Appy Slappy, Easy, Medium, Hard\n\n• Make Foe: chụp ảnh hoặc lấy từ thư viện, xoay và phóng to cho khớp mắt, miệng rồi tạo đối thủ của riêng bạn\n\n• Nhiều hồ sơ người chơi, có bảng điểm\n\n• Tùy chọn âm thanh, nhạc nền và rung\n\n• Cần quyền Camera và Ảnh để dùng Make Foe"
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "Phiên bản",
+     "text": "1.3.64"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "Hỗ trợ",
+     "text": "iOS 15+ · Roothide, Rootless"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "Tác giả",
+     "text": "Ngọc Hải"
+    }
+   ]
+  },
+  {
+   "tabname": "Nhật ký",
+   "class": "DepictionStackView",
+   "views": [
+    {
+     "class": "DepictionHeaderView",
+     "title": "Phiên bản 1.3.64"
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "17/10/2026",
+     "useBoldText": false
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "• Có mặt trên kho Realm iOS cho Roothide và Rootless\n\n• Nếu đã cài bản FaceFighter Reborn qua TrollStore, hãy xóa bản đó trước khi cài"
+    },
+    {
+     "class": "DepictionSeparatorView"
+    }
+   ]
+  }
+ ],
+ "headerImage": "https://realmios.github.io/repo/banners/com.realmios.facefighter.jpg?t=1792231676"
+}
