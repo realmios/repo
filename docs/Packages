@@ -12,28 +12,28 @@ Size: 46360
 MD5sum: 4194da321c4d9aa4ee9b62019c527722
 SHA1: db46f5b3a68c33c317087ada34731a5e0e4a66e7
 SHA256: d81c3967520afe78956f736098f9ceb34444dd853d7daeeef764b7df611a3fb2
-Icon: https://realmios.github.io/repo/icons/com.realmios.realtoggle.png?t=1792209290
+Icon: https://realmios.github.io/repo/icons/com.realmios.realtoggle.png?t=1792211023
 Depiction: https://realmios.github.io/repo/depictions/com.realmios.realtoggle.html
-SileoDepiction: https://realmios.github.io/repo/depictions/com.realmios.realtoggle.json?t=1792209290
+SileoDepiction: https://realmios.github.io/repo/depictions/com.realmios.realtoggle.json?t=1792211023
 Homepage: https://realmios.github.io/repo/
 
 Package: com.realmios.simplyrics
 Name: Simplyrics
-Version: 0.8.89
+Version: 0.8.92
 Architecture: iphoneos-arm64e
 Description: Thêm nhạc kèm lời đồng bộ vào thư viện Nhạc
 Maintainer: Ngọc Hải
 Author: Roothide
 Section: Utilities
 Depends: firmware (>= 15.0)
-Filename: roothide/com.realmios.simplyrics_0.8.89_iphoneos-arm64e.deb
-Size: 544842
-MD5sum: f5e8a71804629dde4cc08f087443dfc8
-SHA1: 69523f8aa649aa8f06d5308ef6e5b142ee8a4cd8
-SHA256: 12f183dc3986bbfa8b1063a0d2392d2f227a5104591c5372698895385da9f91b
-Icon: https://realmios.github.io/repo/icon.png?t=1792209290
+Filename: roothide/com.realmios.simplyrics_0.8.92_iphoneos-arm64e.deb
+Size: 546054
+MD5sum: 9724b98da84e9b1073ceacd2fe68a2b5
+SHA1: 42f474bf72defc66b4212748925cd5582636f113
+SHA256: 05275531df085a113d5f369aef915b955d55f07cb2ca8840aee2ef52d99b0b7e
+Icon: https://realmios.github.io/repo/icon.png?t=1792211023
 Depiction: https://realmios.github.io/repo/depictions/com.realmios.simplyrics.html
-SileoDepiction: https://realmios.github.io/repo/depictions/com.realmios.simplyrics.json?t=1792209290
+SileoDepiction: https://realmios.github.io/repo/depictions/com.realmios.simplyrics.json?t=1792211023
 Homepage: https://realmios.github.io/repo/
 
 Package: com.realmios.realtoggle
@@ -50,27 +50,27 @@ Size: 45776
 MD5sum: 5f60e7e9b1cd3c8a62a86221a99a6710
 SHA1: bba2824099e13d52b0e3bb2f8d188a1e029bd932
 SHA256: c28ea5a8ee99e064a06e3edf2f33b916564f7c83c03dff1791bfb61edd6bd42a
-Icon: https://realmios.github.io/repo/icons/com.realmios.realtoggle.png?t=1792209290
+Icon: https://realmios.github.io/repo/icons/com.realmios.realtoggle.png?t=1792211023
 Depiction: https://realmios.github.io/repo/depictions/com.realmios.realtoggle.html
-SileoDepiction: https://realmios.github.io/repo/depictions/com.realmios.realtoggle.json?t=1792209290
+SileoDepiction: https://realmios.github.io/repo/depictions/com.realmios.realtoggle.json?t=1792211023
 Homepage: https://realmios.github.io/repo/
 
 Package: com.realmios.simplyrics
 Name: Simplyrics
-Version: 0.8.89
+Version: 0.8.92
 Architecture: iphoneos-arm64
 Description: Thêm nhạc kèm lời đồng bộ vào thư viện Nhạc
 Maintainer: Ngọc Hải
 Author: Rootless
 Section: Utilities
 Depends: firmware (>= 15.0)
-Filename: rootless/com.realmios.simplyrics_0.8.89_iphoneos-arm64.deb
-Size: 544894
-MD5sum: 1667dc07fa06cd1b214d0f2e327adc65
-SHA1: 617ed1d959aa2b5a19f620f4af0dcf6728342f95
-SHA256: 273a308055a8373f0717fe96142ee542cc5ff4eae8d5d9b73c821b7cea81bbdd
-Icon: https://realmios.github.io/repo/icon.png?t=1792209290
+Filename: rootless/com.realmios.simplyrics_0.8.92_iphoneos-arm64.deb
+Size: 546112
+MD5sum: c40a1d07ac926b1349b5e3e84843249a
+SHA1: 6a8474189293da31834590e0061bd10322f6f423
+SHA256: b3ae818550417b2c767e30099597a27510c74a33d7e374a3cd9125923e37f3ec
+Icon: https://realmios.github.io/repo/icon.png?t=1792211023
 Depiction: https://realmios.github.io/repo/depictions/com.realmios.simplyrics.html
-SileoDepiction: https://realmios.github.io/repo/depictions/com.realmios.simplyrics.json?t=1792209290
+SileoDepiction: https://realmios.github.io/repo/depictions/com.realmios.simplyrics.json?t=1792211023
 Homepage: https://realmios.github.io/repo/
 

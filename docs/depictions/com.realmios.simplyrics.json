@@ -9,7 +9,7 @@
    "views": [
     {
      "class": "DepictionMarkdownView",
-     "markdown": "Thêm nhạc vào thư viện kèm thông tin, ảnh bìa và lời đồng bộ, tự động lấy từ Apple Music. Bản miễn phí lưu nhạc kèm ảnh bìa và lời thường; Premium mở khóa toàn bộ."
+     "markdown": "Thêm nhạc vào thư viện kèm thông tin, ảnh bìa và lời. Bản miễn phí có tìm thông tin, ảnh bìa, lời thường và tải nhạc; Premium mở khóa lời đồng bộ, liên kết nghệ sĩ và nhiều hơn nữa."
     },
     {
      "class": "DepictionScreenshotsView",
@@ -53,9 +53,27 @@
      "class": "DepictionSeparatorView"
     },
     {
+     "class": "DepictionHeaderView",
+     "title": "Premium"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Mở khóa toàn bộ tính năng chỉ 29.000đ, mua một lần dùng trọn đời cho 1 máy. Liên hệ để mua và nhận mã kích hoạt."
+    },
+    {
+     "class": "DepictionButtonView",
+     "text": "Liên hệ mua trên Telegram",
+     "action": "https://t.me/ngochaidz",
+     "yPadding": 6,
+     "tintColor": "#5856d6"
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
      "class": "DepictionTableTextView",
      "title": "Phiên bản",
-     "text": "0.8.89"
+     "text": "0.8.92"
     },
     {
      "class": "DepictionTableTextView",
@@ -73,6 +91,22 @@
    "tabname": "Nhật ký",
    "class": "DepictionStackView",
    "views": [
+    {
+     "class": "DepictionHeaderView",
+     "title": "Phiên bản 0.8.92"
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "17/10/2026",
+     "useBoldText": false
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "• Bản miễn phí được tìm thông tin bài hát và tự gắn tên nghệ sĩ từ Apple Music (không liên kết trang nghệ sĩ)\n\n• Thẻ lời đồng bộ gọn hơn khi chưa có Premium\n\n• Thêm mức giá Premium 29.000đ trọn đời trong popup giới thiệu"
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
     {
      "class": "DepictionHeaderView",
      "title": "Phiên bản 0.8.89"
@@ -108,5 +142,5 @@
    ]
   }
  ],
- "headerImage": "https://realmios.github.io/repo/banner.jpg?t=1792209290"
+ "headerImage": "https://realmios.github.io/repo/banner.jpg?t=1792211023"
 }
