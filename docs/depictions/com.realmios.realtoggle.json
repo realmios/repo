@@ -28,7 +28,7 @@
     {
      "class": "DepictionTableTextView",
      "title": "Phiên bản",
-     "text": "0.1.5"
+     "text": "0.1.6"
     },
     {
      "class": "DepictionTableTextView",
@@ -48,6 +48,22 @@
    "views": [
     {
      "class": "DepictionHeaderView",
+     "title": "Phiên bản 0.1.6"
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "17/10/2026",
+     "useBoldText": false
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "• Sửa lỗi nút Wi-Fi/Bluetooth trong Trung tâm điều khiển còn sáng trắng dù đã tắt hẳn trong Cài đặt"
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionHeaderView",
      "title": "Phiên bản 0.1"
     },
     {
@@ -65,5 +81,5 @@
    ]
   }
  ],
- "headerImage": "https://realmios.github.io/repo/banners/com.realmios.realtoggle.jpg?t=1792208393"
+ "headerImage": "https://realmios.github.io/repo/banners/com.realmios.realtoggle.jpg?t=1792209290"
 }

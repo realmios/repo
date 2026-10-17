@@ -1,20 +1,20 @@
 Package: com.realmios.realtoggle
 Name: RealToggle
-Version: 0.1.5
+Version: 0.1.6
 Architecture: iphoneos-arm64e
 Description: Chạm tắt Wi-Fi và Bluetooth trong Trung tâm điều khiển sẽ tắt hẳn
 Maintainer: Ngọc Hải
 Author: Roothide
 Section: Tweaks
 Depends: firmware (>= 15.0)
-Filename: roothide/com.realmios.realtoggle_0.1.5_iphoneos-arm64e.deb
-Size: 43176
-MD5sum: a59bfc8b6bed078940b2b9dab3e79bf5
-SHA1: b4e4816d3c80edc35187909a9addef9d7c912b0d
-SHA256: bf44f8b71bf975c837827030a404a3da92334ace491ced02624ea802c3a53f2d
-Icon: https://realmios.github.io/repo/icons/com.realmios.realtoggle.png?t=1792208393
+Filename: roothide/com.realmios.realtoggle_0.1.6_iphoneos-arm64e.deb
+Size: 46360
+MD5sum: 4194da321c4d9aa4ee9b62019c527722
+SHA1: db46f5b3a68c33c317087ada34731a5e0e4a66e7
+SHA256: d81c3967520afe78956f736098f9ceb34444dd853d7daeeef764b7df611a3fb2
+Icon: https://realmios.github.io/repo/icons/com.realmios.realtoggle.png?t=1792209290
 Depiction: https://realmios.github.io/repo/depictions/com.realmios.realtoggle.html
-SileoDepiction: https://realmios.github.io/repo/depictions/com.realmios.realtoggle.json?t=1792208393
+SileoDepiction: https://realmios.github.io/repo/depictions/com.realmios.realtoggle.json?t=1792209290
 Homepage: https://realmios.github.io/repo/
 
 Package: com.realmios.simplyrics
@@ -31,28 +31,28 @@ Size: 544842
 MD5sum: f5e8a71804629dde4cc08f087443dfc8
 SHA1: 69523f8aa649aa8f06d5308ef6e5b142ee8a4cd8
 SHA256: 12f183dc3986bbfa8b1063a0d2392d2f227a5104591c5372698895385da9f91b
-Icon: https://realmios.github.io/repo/icon.png?t=1792208393
+Icon: https://realmios.github.io/repo/icon.png?t=1792209290
 Depiction: https://realmios.github.io/repo/depictions/com.realmios.simplyrics.html
-SileoDepiction: https://realmios.github.io/repo/depictions/com.realmios.simplyrics.json?t=1792208393
+SileoDepiction: https://realmios.github.io/repo/depictions/com.realmios.simplyrics.json?t=1792209290
 Homepage: https://realmios.github.io/repo/
 
 Package: com.realmios.realtoggle
 Name: RealToggle
-Version: 0.1.5
+Version: 0.1.6
 Architecture: iphoneos-arm64
 Description: Chạm tắt Wi-Fi và Bluetooth trong Trung tâm điều khiển sẽ tắt hẳn
 Maintainer: Ngọc Hải
 Author: Rootless
 Section: Tweaks
 Depends: firmware (>= 15.0)
-Filename: rootless/com.realmios.realtoggle_0.1.5_iphoneos-arm64.deb
-Size: 42424
-MD5sum: dde723d3c67c73b8a8d04a2eec3340d3
-SHA1: 22dbec514862d7588784688f3cce0727d97d4384
-SHA256: 100c5fac640e543759d1e5ecd50c32e9b7042a572b8359fa64da44502158e690
-Icon: https://realmios.github.io/repo/icons/com.realmios.realtoggle.png?t=1792208393
+Filename: rootless/com.realmios.realtoggle_0.1.6_iphoneos-arm64.deb
+Size: 45776
+MD5sum: 5f60e7e9b1cd3c8a62a86221a99a6710
+SHA1: bba2824099e13d52b0e3bb2f8d188a1e029bd932
+SHA256: c28ea5a8ee99e064a06e3edf2f33b916564f7c83c03dff1791bfb61edd6bd42a
+Icon: https://realmios.github.io/repo/icons/com.realmios.realtoggle.png?t=1792209290
 Depiction: https://realmios.github.io/repo/depictions/com.realmios.realtoggle.html
-SileoDepiction: https://realmios.github.io/repo/depictions/com.realmios.realtoggle.json?t=1792208393
+SileoDepiction: https://realmios.github.io/repo/depictions/com.realmios.realtoggle.json?t=1792209290
 Homepage: https://realmios.github.io/repo/
 
 Package: com.realmios.simplyrics
@@ -69,8 +69,8 @@ Size: 544894
 MD5sum: 1667dc07fa06cd1b214d0f2e327adc65
 SHA1: 617ed1d959aa2b5a19f620f4af0dcf6728342f95
 SHA256: 273a308055a8373f0717fe96142ee542cc5ff4eae8d5d9b73c821b7cea81bbdd
-Icon: https://realmios.github.io/repo/icon.png?t=1792208393
+Icon: https://realmios.github.io/repo/icon.png?t=1792209290
 Depiction: https://realmios.github.io/repo/depictions/com.realmios.simplyrics.html
-SileoDepiction: https://realmios.github.io/repo/depictions/com.realmios.simplyrics.json?t=1792208393
+SileoDepiction: https://realmios.github.io/repo/depictions/com.realmios.simplyrics.json?t=1792209290
 Homepage: https://realmios.github.io/repo/
 
