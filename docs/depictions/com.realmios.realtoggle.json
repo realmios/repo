@@ -1,0 +1,69 @@
+{
+ "minVersion": "0.4",
+ "class": "DepictionTabView",
+ "tintColor": "#3b6cf5",
+ "tabs": [
+  {
+   "tabname": "Chi tiết",
+   "class": "DepictionStackView",
+   "views": [
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Chạm vào Wi-Fi hoặc Bluetooth trong Trung tâm điều khiển để tắt hẳn, thay vì chỉ ngắt kết nối tạm thời."
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionHeaderView",
+     "title": "Tính năng"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "• Chạm Wi-Fi hoặc Bluetooth trong Trung tâm điều khiển là tắt hẳn, trong Cài đặt cũng tắt theo\n\n• Chỉ áp dụng khi tắt, chạm để bật vẫn như bình thường\n\n• Trong Cài đặt chỉ có công tắc bật tweak và nút Respring"
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "Phiên bản",
+     "text": "0.1.5"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "Hỗ trợ",
+     "text": "iOS 15+ · đã thử trên iOS 17 (Roothide)"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "Tác giả",
+     "text": "Ngọc Hải"
+    }
+   ]
+  },
+  {
+   "tabname": "Nhật ký",
+   "class": "DepictionStackView",
+   "views": [
+    {
+     "class": "DepictionHeaderView",
+     "title": "Phiên bản 0.1"
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "16/10/2026",
+     "useBoldText": false
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "• Ra mắt trên kho Realm iOS\n\n• Chạm tắt Wi-Fi và Bluetooth trong Trung tâm điều khiển là tắt hẳn\n\n• Sửa lỗi đôi khi bật Wi-Fi hoặc Bluetooth thì tự tắt lại\n\n• Thêm icon cho tweak và phần Cài đặt"
+    },
+    {
+     "class": "DepictionSeparatorView"
+    }
+   ]
+  }
+ ],
+ "headerImage": "https://realmios.github.io/repo/banners/com.realmios.realtoggle.jpg?t=1792208393"
+}

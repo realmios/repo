@@ -1,0 +1,70 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Realm iOS</title><link rel="icon" href="RepoIcon.png"><link rel="apple-touch-icon" href="RepoIcon.png">
+<style>
+:root{color-scheme:light dark;--bg:#f4f3ff;--fg:#1d1b3a;--mut:#6b6990;--card:rgba(255,255,255,.82);--line:rgba(88,86,214,.12);--ac:#5b52e0}
+@media(prefers-color-scheme:dark){:root{--bg:#0e0d1c;--fg:#f1f0ff;--mut:#a29fc8;--card:rgba(32,30,58,.8);--line:rgba(255,255,255,.08)}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 -apple-system,system-ui,"SF Pro Text",sans-serif;-webkit-font-smoothing:antialiased;min-height:100vh}
+.hero{position:relative;overflow:hidden;color:#fff;padding:calc(env(safe-area-inset-top) + 34px) 20px 54px;
+ background:linear-gradient(135deg,#c25bff 0%,#7d5af0 38%,#4f56dc 100%);border-radius:0 0 48% 48%/0 0 42px 42px}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;filter:blur(2px);opacity:.35;background:#fff}
+.hero:before{width:260px;height:260px;right:-90px;top:-70px;opacity:.18}
+.hero:after{width:180px;height:180px;left:-60px;bottom:-90px;opacity:.12}
+.in{position:relative;max-width:560px;margin:auto;display:flex;gap:18px;align-items:center}
+.logo{width:92px;height:92px;border-radius:24px;flex:none;box-shadow:0 10px 28px rgba(40,20,120,.35)}
+h1{margin:0;font-size:34px;line-height:1.1;letter-spacing:-.5px}
+.sub{margin:6px 0 0;opacity:.92;font-size:17px;line-height:1.3}
+.tags{margin:10px 0 0;font-size:13px;opacity:.8}
+.wrap{max-width:560px;margin:26px auto 0;padding:0 16px 30px;position:relative}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:16px;margin:14px 0;
+ box-shadow:0 8px 28px rgba(80,70,200,.12);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);color:inherit;text-decoration:none}
+.row{display:flex;gap:14px;align-items:center}
+.ic{width:68px;height:68px;border-radius:17px;flex:none}
+.grow{flex:1;min-width:0}
+.t{font-weight:700;font-size:19px;line-height:1.2}.d{color:var(--mut);font-size:15px;margin-top:4px;line-height:1.35}
+.badge{font-size:12px;font-weight:600;color:var(--ac);background:rgba(91,82,224,.12);padding:3px 10px;border-radius:99px;flex:none;align-self:flex-start}
+.chev{color:var(--mut);font-size:22px;flex:none}
+.db{display:grid;place-items:center;background:linear-gradient(135deg,#b25cff,#5059e0)}
+.url{margin-top:10px;font:15px ui-monospace,Menlo,monospace;color:var(--mut);word-break:break-all}
+.btns{display:flex;gap:10px;margin-top:14px}
+.btn{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:15px;padding:14px 10px;
+ font:600 16px -apple-system,system-ui,sans-serif;text-decoration:none;cursor:pointer;color:#fff;background:linear-gradient(90deg,#9a55f5,#4f56dc)}
+.btn.alt{background:transparent;color:var(--ac);border:1.5px solid rgba(91,82,224,.45)}
+.note{margin:12px 2px 0;color:var(--mut);font-size:14px}
+.foot{text-align:center;color:var(--mut);font-size:13px;margin-top:26px}.foot img{width:44px;height:44px;border-radius:12px;display:block;margin:0 auto 6px}
+</style></head><body>
+<header class="hero"><div class="in">
+ <img class="logo" src="RepoIcon.png" alt="Realm iOS">
+ <div><h1>Realm iOS</h1><p class="sub">Kho tweak và ứng dụng<br>cho iPhone jailbreak</p><p class="tags">An toàn · Ổn định · Cập nhật thường xuyên</p></div>
+</div></header>
+<main class="wrap">
+<!--PKGS-->
+ <a class="card" href="depictions/com.realmios.realtoggle.html"><div class="row">
+  <img class="ic" src="icons/com.realmios.realtoggle.png" alt="">
+  <div class="grow"><div class="t">RealToggle</div><div class="d">Chạm tắt Wi-Fi và Bluetooth là tắt hẳn</div></div>
+  <span class="badge">Tweak</span><span class="chev">›</span></div></a>
+ <a class="card" href="depictions/com.realmios.simplyrics.html"><div class="row">
+  <img class="ic" src="icon.png" alt="">
+  <div class="grow"><div class="t">Simplyrics</div><div class="d">Thêm nhạc kèm lời đồng bộ vào thư viện Nhạc</div></div>
+  <span class="badge">Tweak</span><span class="chev">›</span></div></a>
+<!--/PKGS-->
+
+ <section class="card"><div class="row">
+  <div class="ic db"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"/></svg></div>
+  <div class="grow"><div class="t">Nguồn (Roothide và Rootless dùng chung)</div></div><span class="badge">Repo</span></div>
+  <div class="url" id="u">https://realmios.github.io/repo</div>
+  <div class="btns">
+   <a class="btn" href="sileo://source/https://realmios.github.io/repo/">Thêm vào Sileo</a>
+   <button class="btn alt" id="cp" type="button">Sao chép URL</button>
+  </div>
+  <p class="note">Sileo tự chọn bản phù hợp với máy của bạn. Dùng Zebra hoặc Installer thì bấm “Sao chép URL” rồi dán vào mục thêm nguồn.</p>
+ </section>
+ <div class="foot"><img src="RepoIcon.png" alt="">Realm iOS<br>Cùng bạn khám phá thế giới iOS</div>
+</main>
+<script>
+(function(){var b=document.getElementById('cp'),u='https://realmios.github.io/repo';
+function done(){var o=b.textContent;b.textContent='Đã sao chép ✓';setTimeout(function(){b.textContent=o},1800)}
+function fb(){var t=document.createElement('textarea');t.value=u;t.style.position='fixed';t.style.opacity=0;document.body.appendChild(t);t.focus();t.select();t.setSelectionRange(0,99);try{document.execCommand('copy');done()}catch(e){prompt('Sao chép URL:',u)}document.body.removeChild(t)}
+b.addEventListener('click',function(){if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(u).then(done,fb)}else fb()})})();
+</script></body></html>

@@ -1,0 +1,95 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Quản lý mã Simplyrics</title>
+<style>
+:root{color-scheme:light dark;--bg:#f2f2f7;--card:#fff;--fg:#1c1c1e;--mut:#6e6e73;--ac:#5856d6;--ok:#248a3d;--bad:#d70015;--line:#e5e5ea}
+@media(prefers-color-scheme:dark){:root{--bg:#000;--card:#1c1c1e;--fg:#f5f5f7;--mut:#98989d;--line:#2c2c2e;--ok:#32d74b;--bad:#ff453a}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 -apple-system,system-ui,sans-serif;padding:16px 16px 60px}
+.w{max-width:640px;margin:auto}h1{font-size:26px;margin:6px 0 2px}.m{color:var(--mut);font-size:14px}
+.c{background:var(--card);border-radius:16px;padding:16px;margin:14px 0}
+input,button{font:inherit}input{width:100%;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--fg)}
+.row{display:flex;gap:8px}.row>*{flex:1}
+button{border:0;border-radius:12px;padding:12px 14px;background:var(--ac);color:#fff;font-weight:600}
+button.s{background:var(--bg);color:var(--ac)}button.d{background:transparent;color:var(--bad);padding:8px 10px}
+button.t{background:transparent;color:var(--ac);padding:8px 10px}button:disabled{opacity:.5}
+.code{font:600 16px ui-monospace,Menlo,monospace;letter-spacing:.5px;word-break:break-all}
+.it{border-top:1px solid var(--line);padding:12px 0}.it:first-child{border-top:0}
+.tag{display:inline-block;font-size:12px;font-weight:600;padding:2px 8px;border-radius:99px;margin-left:6px}
+.free{background:#e8f5e9;color:#1b5e20}.used{background:#e3f2fd;color:#0d47a1}.lock{background:#ffebee;color:#b71c1c}
+.acts{display:flex;flex-wrap:wrap;gap:2px;margin-top:4px}.hide{display:none}#msg{margin:8px 0;font-size:14px;min-height:20px}
+textarea{width:100%;height:120px;margin-top:8px;padding:10px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--fg);font:15px ui-monospace,Menlo,monospace}
+</style></head><body><div class="w">
+<h1>Quản lý mã Simplyrics</h1><div class="m" id="who">Chưa đăng nhập</div>
+<div class="c" id="login"><button id="bin">Đăng nhập bằng Google</button><div class="m" style="margin-top:8px">Chỉ tài khoản quản trị mới dùng được.</div><div id="lerr" class="m" style="margin-top:8px;color:var(--bad)"></div></div>
+<div id="app" class="hide">
+ <div class="c"><b>Tạo mã mới</b>
+  <div class="row" style="margin-top:10px"><input id="n" type="number" min="1" max="50" value="1" inputmode="numeric" placeholder="Số lượng"><input id="note" placeholder="Ghi chú (tên khách…)"></div>
+  <div style="margin-top:10px"><button id="gen" style="width:100%">Tạo mã</button></div>
+  <textarea id="out" class="hide" readonly></textarea>
+  <button id="cpall" class="s hide" style="width:100%;margin-top:8px">Sao chép tất cả</button>
+ </div>
+ <div id="msg" class="m"></div>
+ <div class="c"><div class="row"><input id="q" placeholder="Tìm mã hoặc ghi chú"><button id="rl" class="s" style="flex:0 0 auto">Tải lại</button></div><div id="list" style="margin-top:8px"></div></div>
+ <button id="bout" class="s" style="width:100%">Đăng xuất</button>
+</div></div>
+<script type="module">
+import {initializeApp} from "https://www.gstatic.com/firebasejs/13.0.0/firebase-app.js";
+import {getAuth,GoogleAuthProvider,signInWithPopup,onAuthStateChanged,signOut} from "https://www.gstatic.com/firebasejs/13.0.0/firebase-auth.js";
+import {getFirestore,collection,getDocs,setDoc,updateDoc,deleteDoc,doc,deleteField,serverTimestamp} from "https://www.gstatic.com/firebasejs/13.0.0/firebase-firestore.js";
+const app=initializeApp({apiKey:"AIzaSyDmqz1KBot_xwTI3Izb58ZhkZdr9XwXRpE",authDomain:"simplyrics.firebaseapp.com",projectId:"simplyrics",appId:"1:832248096045:web:70f4f17aeb9f498f919fa4"});
+const auth=getAuth(app),db=getFirestore(app),$=id=>document.getElementById(id);
+const say=(t,bad)=>{$("msg").textContent=t;$("msg").style.color=bad?"var(--bad)":"var(--mut)"};
+let all=[];
+$("bin").onclick=async()=>{
+  $("lerr").textContent="";
+  try{await signInWithPopup(auth,new GoogleAuthProvider())}
+  catch(e){
+    const hint={"auth/popup-blocked":"Safari chặn cửa sổ đăng nhập. Bấm nút lần nữa. Nếu vẫn bị: Cài đặt → Safari → bật tắt “Chặn cửa sổ bật lên”.",
+      "auth/cancelled-popup-request":"Bấm nút lần nữa.","auth/popup-closed-by-user":"Bạn đã đóng cửa sổ đăng nhập.",
+      "auth/unauthorized-domain":"Chưa thêm realmios.github.io vào Authorized domains trong Firebase."}[e.code];
+    $("lerr").textContent=hint||("Không đăng nhập được: "+e.code);
+  }
+};
+$("bout").onclick=()=>signOut(auth);
+onAuthStateChanged(auth,u=>{
+  $("who").textContent=u?("Đăng nhập: "+u.email):"Chưa đăng nhập";
+  $("login").classList.toggle("hide",!!u);$("app").classList.toggle("hide",!u);
+  if(u)load();
+});
+const AL="ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+function newCode(){const b=crypto.getRandomValues(new Uint8Array(16));let s="";for(let i=0;i<16;i++){s+=AL[b[i]%AL.length];if(i%4==3&&i<15)s+="-"}return s}
+$("gen").onclick=async()=>{
+  const n=Math.max(1,Math.min(50,parseInt($("n").value)||1)),note=$("note").value.trim(),codes=[];
+  $("gen").disabled=true;
+  try{for(let i=0;i<n;i++){const c=newCode();await setDoc(doc(db,"licenses",c),{active:true,plan:"Premium trọn đời",note,createdAt:serverTimestamp()});codes.push(c)}}
+  catch(e){say("Lỗi tạo mã: "+e.code+" (kiểm tra Rules và email quản trị)",1)}
+  $("gen").disabled=false;
+  if(codes.length){$("out").value=codes.join("\n");$("out").classList.remove("hide");$("cpall").classList.remove("hide");say("Đã tạo "+codes.length+" mã.");load()}
+};
+$("cpall").onclick=()=>copy($("out").value);
+async function copy(t){try{await navigator.clipboard.writeText(t);say("Đã sao chép.")}catch(e){$("out").select();say("Hãy giữ và sao chép thủ công.")}}
+async function load(){
+  try{const s=await getDocs(collection(db,"licenses"));all=s.docs.map(d=>({id:d.id,...d.data()}));
+    all.sort((a,b)=>(b.createdAt?.seconds||0)-(a.createdAt?.seconds||0));render()}
+  catch(e){say("Không tải được danh sách: "+e.code,1)}
+}
+function render(){
+  const k=$("q").value.trim().toUpperCase();
+  const rows=all.filter(x=>!k||x.id.includes(k)||(x.note||"").toUpperCase().includes(k));
+  $("list").innerHTML=rows.length?"":'<div class="m">Chưa có mã nào.</div>';
+  rows.forEach(x=>{
+    const st=x.active===false?'<span class="tag lock">Khóa</span>':x.device?'<span class="tag used">Đã gắn máy '+String(x.device).slice(0,6).toUpperCase()+'</span>':'<span class="tag free">Chưa dùng</span>';
+    const d=document.createElement("div");d.className="it";
+    d.innerHTML='<div class="code">'+x.id+st+'</div><div class="m">'+(x.note?x.note.replace(/</g,"&lt;"):"")+'</div><div class="acts"></div>';
+    const a=d.querySelector(".acts");
+    const add=(t,cls,fn)=>{const b=document.createElement("button");b.textContent=t;b.className=cls;b.onclick=fn;a.appendChild(b)};
+    add("Sao chép","t",()=>copy(x.id));
+    if(x.device)add("Đặt lại máy","t",async()=>{if(confirm("Cho phép mã này gắn sang máy khác?")){await updateDoc(doc(db,"licenses",x.id),{device:deleteField(),activatedAt:deleteField()});load()}});
+    add(x.active===false?"Mở khóa":"Khóa","t",async()=>{await updateDoc(doc(db,"licenses",x.id),{active:x.active===false});load()});
+    add("Xóa","d",async()=>{if(confirm("Xóa hẳn mã "+x.id+"?")){await deleteDoc(doc(db,"licenses",x.id));load()}});
+    $("list").appendChild(d);
+  });
+}
+$("q").oninput=render;$("rl").onclick=load;
+</script></body></html>

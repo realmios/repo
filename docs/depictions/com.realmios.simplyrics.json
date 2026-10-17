@@ -1,0 +1,112 @@
+{
+ "minVersion": "0.4",
+ "class": "DepictionTabView",
+ "tintColor": "#5856d6",
+ "tabs": [
+  {
+   "tabname": "Chi tiết",
+   "class": "DepictionStackView",
+   "views": [
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Thêm nhạc vào thư viện kèm thông tin, ảnh bìa và lời đồng bộ, tự động lấy từ Apple Music. Bản miễn phí lưu nhạc kèm ảnh bìa và lời thường; Premium mở khóa toàn bộ."
+    },
+    {
+     "class": "DepictionScreenshotsView",
+     "itemCornerRadius": 12,
+     "itemSize": "{232, 464}",
+     "screenshots": [
+      {
+       "accessibilityText": "Màn hình 1",
+       "url": "https://realmios.github.io/repo/screenshots/1.jpg"
+      },
+      {
+       "accessibilityText": "Màn hình 2",
+       "url": "https://realmios.github.io/repo/screenshots/2.jpg"
+      },
+      {
+       "accessibilityText": "Màn hình 3",
+       "url": "https://realmios.github.io/repo/screenshots/3.jpg"
+      },
+      {
+       "accessibilityText": "Màn hình 4",
+       "url": "https://realmios.github.io/repo/screenshots/4.jpg"
+      },
+      {
+       "accessibilityText": "Màn hình 5",
+       "url": "https://realmios.github.io/repo/screenshots/5.jpg"
+      }
+     ]
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionHeaderView",
+     "title": "Tính năng"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "• Tìm thông tin bài hát từ Apple Music: tiêu đề, nghệ sĩ, album, thể loại, năm\n\n• Tự thêm ảnh bìa 1200×1200 và liên kết nghệ sĩ Apple Music\n\n• Ghi lời bài hát thường và lời đồng bộ (LRC) vào file MP3\n\n• Đồng bộ lời: vừa nghe vừa chạm để đánh dấu từng dòng\n\n• Nghe thử, chỉnh lệch thời gian lời\n\n• Thêm bài vào thư viện Nhạc, nhập nhiều file từ Files, xem lịch sử\n\n• Tìm nhạc miễn phí (Creative Commons) để tải về\n\n• Tweak cho app Nhạc: lời đồng bộ kiểu Apple Music, có hiệu ứng (Premium)"
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "Phiên bản",
+     "text": "0.8.89"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "Hỗ trợ",
+     "text": "iOS 15+ · Roothide, Rootless"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "Tác giả",
+     "text": "Ngọc Hải"
+    }
+   ]
+  },
+  {
+   "tabname": "Nhật ký",
+   "class": "DepictionStackView",
+   "views": [
+    {
+     "class": "DepictionHeaderView",
+     "title": "Phiên bản 0.8.89"
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "17/10/2026",
+     "useBoldText": false
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "• Thêm giấy phép Premium: bản miễn phí lưu nhạc, ảnh bìa, lời thường và tải nhạc; Premium mở khóa phần còn lại\n\n• Kiểm tra giấy phép mỗi lần mở app\n\n• Tweak lời đồng bộ trong app Nhạc cần giấy phép Premium\n\n• Thêm trang giới thiệu Premium và nút liên hệ mua"
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionHeaderView",
+     "title": "Phiên bản 0.8"
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "16/10/2026",
+     "useBoldText": false
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "• Ra mắt trên kho Realm iOS, cài bằng Sileo cho Roothide và Rootless\n\n• Đồng bộ lời: vừa nghe vừa chạm để đánh dấu từng dòng\n\n• Nghe thử trong app và chỉnh lệch thời gian lời\n\n• Nhập nhiều file cùng lúc từ Files\n\n• Bài có nhiều nghệ sĩ: mỗi nghệ sĩ một dòng, gắn đúng ID Apple Music\n\n• Sửa lỗi dán văn bản, thêm nút ẩn bàn phím\n\n• Gỡ lời song ngữ vì làm lời nhảy sai hoặc chậm"
+    },
+    {
+     "class": "DepictionSeparatorView"
+    }
+   ]
+  }
+ ],
+ "headerImage": "https://realmios.github.io/repo/banner.jpg?t=1792208393"
+}

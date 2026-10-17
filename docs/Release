@@ -1,0 +1,17 @@
+Origin: Realm iOS
+Label: Realm iOS
+Suite: stable
+Version: 1.0
+Codename: ios
+Architectures: iphoneos-arm64 iphoneos-arm64e
+Components: main
+Description: Kho tweak của Realm iOS
+Date: Sat, 17 Oct 2026 03:39:53 UTC
+MD5Sum:
+ d5dda339c1c51d0830fe1cd903cbb261 3242 Packages
+ 26b5aa2f3b4ace3d0620befa598f0255 953 Packages.gz
+ 0453bd2296550fd911c2bee21c600dfc 1104 Packages.bz2
+SHA256:
+ 629a1e2f0180445d4fa219fb14de25d9d80f8290cec65dab9d34cf60073d197e 3242 Packages
+ bee4f314baf2eaa60d4fef5ceda26942b5203747d04a9e860961e955a7b99b4e 953 Packages.gz
+ fc28ce4d6ec607a22c372660cd576318f54de4b1878af4a3f8ed61d1be087b05 1104 Packages.bz2
