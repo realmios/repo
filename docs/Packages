@@ -12,9 +12,28 @@ Size: 15615692
 MD5sum: 33c18196443a359e0ad6652b8fd54335
 SHA1: 3c72ba2c7dbc73bd946ff8bf9ffca9250924a504
 SHA256: 1ab8aab4052f4438499e93827f1c17fc66fa4cd3609bb81a95cf424343b88204
-Icon: https://realmios.github.io/repo/icons/com.realmios.facefighter.png?t=1792231676
+Icon: https://realmios.github.io/repo/icons/com.realmios.facefighter.png?t=1792484979
 Depiction: https://realmios.github.io/repo/depictions/com.realmios.facefighter.html
-SileoDepiction: https://realmios.github.io/repo/depictions/com.realmios.facefighter.json?t=1792231676
+SileoDepiction: https://realmios.github.io/repo/depictions/com.realmios.facefighter.json?t=1792484979
+Homepage: https://realmios.github.io/repo/
+
+Package: com.realmios.nesretro
+Name: NES Retro
+Version: 0.3.13
+Architecture: iphoneos-arm64e
+Description: Trình chơi game NES, tay cầm cảm ứng, lưu trạng thái, tải game từ kho
+Maintainer: Ngọc Hải
+Author: Roothide
+Section: Games
+Depends: firmware (>= 15.0)
+Filename: roothide/com.realmios.nesretro_0.3.13_iphoneos-arm64e.deb
+Size: 662140
+MD5sum: 8e987f41993ec5a9d1cfeb1971bd5fb6
+SHA1: 017394bf49e58157faae552ad431e147cf9235f1
+SHA256: ea920aa89bf5a99dc321761de447d685c1f294b96b5db92e2426ba67ef9b3a1f
+Icon: https://realmios.github.io/repo/icons/com.realmios.nesretro.png?t=1792484979
+Depiction: https://realmios.github.io/repo/depictions/com.realmios.nesretro.html
+SileoDepiction: https://realmios.github.io/repo/depictions/com.realmios.nesretro.json?t=1792484979
 Homepage: https://realmios.github.io/repo/
 
 Package: com.realmios.realtoggle
@@ -31,9 +50,9 @@ Size: 46360
 MD5sum: 4194da321c4d9aa4ee9b62019c527722
 SHA1: db46f5b3a68c33c317087ada34731a5e0e4a66e7
 SHA256: d81c3967520afe78956f736098f9ceb34444dd853d7daeeef764b7df611a3fb2
-Icon: https://realmios.github.io/repo/icons/com.realmios.realtoggle.png?t=1792231676
+Icon: https://realmios.github.io/repo/icons/com.realmios.realtoggle.png?t=1792484979
 Depiction: https://realmios.github.io/repo/depictions/com.realmios.realtoggle.html
-SileoDepiction: https://realmios.github.io/repo/depictions/com.realmios.realtoggle.json?t=1792231676
+SileoDepiction: https://realmios.github.io/repo/depictions/com.realmios.realtoggle.json?t=1792484979
 Homepage: https://realmios.github.io/repo/
 
 Package: com.realmios.simplyrics
@@ -50,9 +69,9 @@ Size: 546054
 MD5sum: 9724b98da84e9b1073ceacd2fe68a2b5
 SHA1: 42f474bf72defc66b4212748925cd5582636f113
 SHA256: 05275531df085a113d5f369aef915b955d55f07cb2ca8840aee2ef52d99b0b7e
-Icon: https://realmios.github.io/repo/icon.png?t=1792231676
+Icon: https://realmios.github.io/repo/icon.png?t=1792484979
 Depiction: https://realmios.github.io/repo/depictions/com.realmios.simplyrics.html
-SileoDepiction: https://realmios.github.io/repo/depictions/com.realmios.simplyrics.json?t=1792231676
+SileoDepiction: https://realmios.github.io/repo/depictions/com.realmios.simplyrics.json?t=1792484979
 Homepage: https://realmios.github.io/repo/
 
 Package: com.realmios.facefighter
@@ -69,9 +88,28 @@ Size: 15615852
 MD5sum: f94556c75efca1b9b0356a73bd12e3a4
 SHA1: 8a4469f30c76c95b61ce6cd4f6a8f127710312ea
 SHA256: fa458b212a91cc31031b03e733cef1e4ed65c8ab4df77907cfb5755db90cc1e1
-Icon: https://realmios.github.io/repo/icons/com.realmios.facefighter.png?t=1792231676
+Icon: https://realmios.github.io/repo/icons/com.realmios.facefighter.png?t=1792484979
 Depiction: https://realmios.github.io/repo/depictions/com.realmios.facefighter.html
-SileoDepiction: https://realmios.github.io/repo/depictions/com.realmios.facefighter.json?t=1792231676
+SileoDepiction: https://realmios.github.io/repo/depictions/com.realmios.facefighter.json?t=1792484979
+Homepage: https://realmios.github.io/repo/
+
+Package: com.realmios.nesretro
+Name: NES Retro
+Version: 0.3.13
+Architecture: iphoneos-arm64
+Description: Trình chơi game NES, tay cầm cảm ứng, lưu trạng thái, tải game từ kho
+Maintainer: Ngọc Hải
+Author: Rootless
+Section: Games
+Depends: firmware (>= 15.0)
+Filename: rootless/com.realmios.nesretro_0.3.13_iphoneos-arm64.deb
+Size: 662200
+MD5sum: 9a70fa1abe9a3fe78bdab1d3b6d84a7e
+SHA1: 6ae4c76299e2165152e135d134450e9406ebc8be
+SHA256: 132f7fb5b67e4ec303cb993491d2d3a5ae5faf3a8f64425d73450b8da591d247
+Icon: https://realmios.github.io/repo/icons/com.realmios.nesretro.png?t=1792484979
+Depiction: https://realmios.github.io/repo/depictions/com.realmios.nesretro.html
+SileoDepiction: https://realmios.github.io/repo/depictions/com.realmios.nesretro.json?t=1792484979
 Homepage: https://realmios.github.io/repo/
 
 Package: com.realmios.realtoggle
@@ -88,9 +126,9 @@ Size: 45776
 MD5sum: 5f60e7e9b1cd3c8a62a86221a99a6710
 SHA1: bba2824099e13d52b0e3bb2f8d188a1e029bd932
 SHA256: c28ea5a8ee99e064a06e3edf2f33b916564f7c83c03dff1791bfb61edd6bd42a
-Icon: https://realmios.github.io/repo/icons/com.realmios.realtoggle.png?t=1792231676
+Icon: https://realmios.github.io/repo/icons/com.realmios.realtoggle.png?t=1792484979
 Depiction: https://realmios.github.io/repo/depictions/com.realmios.realtoggle.html
-SileoDepiction: https://realmios.github.io/repo/depictions/com.realmios.realtoggle.json?t=1792231676
+SileoDepiction: https://realmios.github.io/repo/depictions/com.realmios.realtoggle.json?t=1792484979
 Homepage: https://realmios.github.io/repo/
 
 Package: com.realmios.simplyrics
@@ -107,8 +145,8 @@ Size: 546112
 MD5sum: c40a1d07ac926b1349b5e3e84843249a
 SHA1: 6a8474189293da31834590e0061bd10322f6f423
 SHA256: b3ae818550417b2c767e30099597a27510c74a33d7e374a3cd9125923e37f3ec
-Icon: https://realmios.github.io/repo/icon.png?t=1792231676
+Icon: https://realmios.github.io/repo/icon.png?t=1792484979
 Depiction: https://realmios.github.io/repo/depictions/com.realmios.simplyrics.html
-SileoDepiction: https://realmios.github.io/repo/depictions/com.realmios.simplyrics.json?t=1792231676
+SileoDepiction: https://realmios.github.io/repo/depictions/com.realmios.simplyrics.json?t=1792484979
 Homepage: https://realmios.github.io/repo/
 

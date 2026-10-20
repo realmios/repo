@@ -1,0 +1,68 @@
+{
+ "minVersion": "0.4",
+ "class": "DepictionTabView",
+ "tintColor": "#2f6fe0",
+ "tabs": [
+  {
+   "tabname": "Chi tiết",
+   "class": "DepictionStackView",
+   "views": [
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "Trình chơi game NES cho iPhone. Chọn file .nes của bạn hoặc tải game đề xuất từ kho, chọn giao diện máy cầm tay dọc hoặc ngang rồi chơi ngay."
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionHeaderView",
+     "title": "Tính năng"
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "• Giao diện máy cầm tay dọc và ngang, nhiều màu và họa tiết\n\n• Nút chữ thập hoặc cần tròn; vừa di chuyển vừa bắn được\n\n• Nút liên thanh ⚡A, ⚡B, tua nhanh, bộ lọc kẻ ô kiểu tivi cũ\n\n• Lưu trạng thái 4 ô cộng ô tự động, lưu tiến trình game\n\n• Hỗ trợ tay cầm Bluetooth\n\n• Game đề xuất và ảnh bìa được cập nhật từ kho, không cần cài lại app"
+    },
+    {
+     "class": "DepictionSeparatorView"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "Phiên bản",
+     "text": "0.3.13"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "Hỗ trợ",
+     "text": "iOS 15+ · Roothide, Rootless"
+    },
+    {
+     "class": "DepictionTableTextView",
+     "title": "Tác giả",
+     "text": "Ngọc Hải"
+    }
+   ]
+  },
+  {
+   "tabname": "Nhật ký",
+   "class": "DepictionStackView",
+   "views": [
+    {
+     "class": "DepictionHeaderView",
+     "title": "Phiên bản 0.3"
+    },
+    {
+     "class": "DepictionSubheaderView",
+     "title": "20/10/2026",
+     "useBoldText": false
+    },
+    {
+     "class": "DepictionMarkdownView",
+     "markdown": "• Có mặt trên kho Realm iOS cho Roothide và Rootless\n\n• Danh sách game đề xuất tải từ kho"
+    },
+    {
+     "class": "DepictionSeparatorView"
+    }
+   ]
+  }
+ ]
+}

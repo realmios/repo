@@ -6,12 +6,12 @@ Codename: ios
 Architectures: iphoneos-arm64 iphoneos-arm64e
 Components: main
 Description: Kho tweak của Realm iOS
-Date: Sat, 17 Oct 2026 10:07:56 UTC
+Date: Tue, 20 Oct 2026 08:29:42 UTC
 MD5Sum:
- 555ce1ee9ce6ed28a26940f7bfe6685f 4902 Packages
- f304a77ca80231c5e6663b06bd48f428 1286 Packages.gz
- e18657a3ec8aa96909521399d38c7923 1490 Packages.bz2
+ 86547f3c2cc07969caef63058bb518b8 6552 Packages
+ 8b68cfc143412e599d98ee50014089b5 1608 Packages.gz
+ 10fab6c998cb49e4d3a43f537947e399 1762 Packages.bz2
 SHA256:
- 97e5e72e9c897015aa02c3599731d7b5f3afc1ceabd32048b89d191fda9232f9 4902 Packages
- bb53495d560bab1a6fa01771d0ab722b38e3a0d02cad72eb81a31ec5c4956795 1286 Packages.gz
- 390be3afef3c3e31d54cde6b49d3f7b76ac706a4fdb737ac976a82a864286e9b 1490 Packages.bz2
+ d6e8fd79a535d40422d239e4c3583cd37eb686a3a456bbbe814a7ae9dce1b5e4 6552 Packages
+ c755d23494aa133748adc3fa98ce575f362f466f9cad6663b574fe9dc15b4479 1608 Packages.gz
+ c307d91403d48c84deb37c6fc6060dfae3957598087799e5ab93ca21925eb0c0 1762 Packages.bz2
